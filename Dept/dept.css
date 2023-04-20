@@ -1,0 +1,69 @@
+.container {
+  margin: 100px 150px 150px 150px;
+  width: 1270x;
+  text-align: justify;
+}
+
+.about {
+  font-size: 48px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-left:20px;
+}
+
+.cse{
+  font-size: 40px;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: left;
+  margin-left:20px;
+}
+
+.top {
+  display: flex;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo h2 {
+  position: absolute;
+  bottom: -12px;
+  left: 43px;
+  background-color: rgba(0,0,0,0.21);
+  padding: 12px;
+  width: 400px;
+  height: 30px;
+  border-radius: 0 0 35px 35px;
+  text-align: center;
+}
+
+.hod{
+  margin-top:182px;
+  margin-left:10px;
+}
+
+.top img {
+  width: 430.22px;
+  height: 398.39px;
+  margin-left: 40px;
+  border-radius: 50px;
+}
+
+.vision {
+  width: 680px;
+  background-color: rgba(0,0,0,0.21);
+  padding:10px 20px 10px 20px;
+  margin:10px;
+  margin-top:50px;
+  border-radius: 50px;
+}
+
+.content{
+  background-color: rgba(0,0,0,0.21);
+  padding:10px 20px 10px 20px;
+  margin:10px;
+  margin-top:50px;
+  border-radius: 50px;
+}
