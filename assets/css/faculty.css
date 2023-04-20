@@ -14,7 +14,7 @@ span {
 
 .container {
   width: 96%;
-  padding: 30px 0;
+  padding: 0 10px;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
@@ -56,10 +56,6 @@ img {
 
 .dsa {
   width: 18rem;
-}
-
-.hod {
-  width: 32rem;
 }
 
 .content h3 {

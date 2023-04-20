@@ -1,12 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap);
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
 }
 
 @font-face {
-  font-family: 'CenturyGothic';
-  src: url('../fonts/Century\ Gothic.ttf') format('truetype');
+  font-family: "CenturyGothic";
+  src: url("../fonts/Century\ Gothic.ttf") format("truetype");
 }
 
 #menuToggle {
@@ -20,14 +21,12 @@
 #menuToggle a {
   text-decoration: none;
   color: #232323;
-
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
   color: tomato;
 }
-
 
 #menuToggle input {
   display: block;
@@ -64,9 +63,8 @@
 
   transform-origin: 4px 0px;
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-    opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -81,7 +79,7 @@
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked~span {
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
@@ -90,7 +88,7 @@
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked~span:nth-last-child(3) {
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -98,7 +96,7 @@
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked~span:nth-last-child(2) {
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -121,7 +119,7 @@
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
@@ -132,6 +130,6 @@
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked~ul {
+#menuToggle input:checked ~ ul {
   transform: none;
 }
