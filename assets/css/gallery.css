@@ -14,7 +14,7 @@ body {
 }
 
 .heading {
-  font-size: 40px;
+  font-size: 30px;
   margin: 30px;
   color: white;
 }
@@ -114,7 +114,7 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .heading{
-    margin: 10px;
+    margin: 0px;
   }
   .item.prev {
     z-index: 2;
@@ -145,5 +145,8 @@ body {
     height: 20vw;
     left: -19%;
     top:65%;
+  }
+  .items{
+    top: 80%;
   }
 }
