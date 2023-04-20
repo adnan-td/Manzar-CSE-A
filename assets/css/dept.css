@@ -1,26 +1,32 @@
 .container {
-  margin: 100px 150px 150px 150px;
-  width: 1270x;
-  text-align: justify;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .about {
   font-size: 48px;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  margin-left:20px;
+  margin-left: 20px;
 }
 
-.cse{
+.cse {
   font-size: 40px;
   padding-top: 0px;
   margin-top: 0px;
   text-align: left;
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 .top {
   display: flex;
+  width: 100vw;
+  padding: 0 10%;
+  gap: 30px;
 }
 
 .photo {
@@ -31,7 +37,7 @@
   position: absolute;
   bottom: -12px;
   left: 43px;
-  background-color: rgba(0,0,0,0.21);
+  background-color: rgba(0, 0, 0, 0.21);
   padding: 12px;
   width: 400px;
   height: 30px;
@@ -39,9 +45,9 @@
   text-align: center;
 }
 
-.hod{
-  margin-top:182px;
-  margin-left:10px;
+.hod {
+  margin-top: 182px;
+  margin-left: 10px;
 }
 
 .top img {
@@ -53,17 +59,17 @@
 
 .vision {
   width: 680px;
-  background-color: rgba(0,0,0,0.21);
-  padding:10px 20px 10px 20px;
-  margin:10px;
-  margin-top:50px;
-  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.21);
+  padding: 30px 20px;
+  margin: 10px;
+  margin-top: 50px;
+  border-radius: 20px;
 }
 
-.content{
-  background-color: rgba(0,0,0,0.21);
-  padding:10px 20px 10px 20px;
-  margin:10px;
-  margin-top:50px;
-  border-radius: 50px;
+.content {
+  background-color: rgba(0, 0, 0, 0.21);
+  padding: 30px 20px;
+  margin: 10px;
+  margin-top: 50px;
+  border-radius: 20px;
 }
