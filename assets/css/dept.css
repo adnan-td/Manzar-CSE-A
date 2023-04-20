@@ -46,7 +46,8 @@
   align-items: center;
   border-radius: 30px;
   overflow: hidden;
-  width: 800px;
+  width: 80%;
+  max-width: 700px;
   min-width: 280px;
 }
 
@@ -73,6 +74,13 @@
   padding: 30px 30px;
   margin-top: 50px;
   border-radius: 20px;
+}
+
+.vision h2,
+.content h2 {
+  color: #B9B0DB;
+  font-size: 26px;
+  padding-bottom: 10px;
 }
 
 .content {
@@ -130,5 +138,12 @@
 
   .heading2 .top .cse {
     font-size: 26px;
+  }
+
+  .vision h2,
+  .content h2 {
+    color: #B9B0DB;
+    font-size: 22px;
+    padding-bottom: 10px;
   }
 }
