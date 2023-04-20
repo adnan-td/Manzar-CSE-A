@@ -8,7 +8,9 @@
 .main-page {
   padding: 6rem;
   padding-top: 0;
-  background: rgb(57, 7, 46);
+  background: linear-gradient(45deg, rgb(148, 41, 143), rgb(57, 7, 46));
+  background-size: 400% 400%;
+  animation: animate 5s ease infinite;
 }
 
 .achievement {
@@ -290,5 +292,17 @@ td {
 
   th {
     color: #fff;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
