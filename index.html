@@ -7,53 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Landing Page</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <title>Home: Manzar - CSE A</title>
 </head>
 
 <body>
-
-    <div class="Background flex-col h-screen w-screen ">
+    <div class="fixed inset-0 w-screen h-screen bg-black z-[-1]">
+        <video src="./assets/video/persona.mp4" autoplay muted loop
+            class="w-full h-full object-cover absolute inset-0" />
+    </div>
+    <nav class="w-screen flex flex-col justify-center items-center bg-transparent my-10 p-5 gap-6">
+        <div class="hidden justify-center items-center gap-5 text-white decoration-0 bg-transparent sm:flex text-lg">
+            <a href="/index.html" class="text-neutral-500 transition-colors duration-300">home</a>
+            <a href="/dept.html" class="hover:text-neutral-500 transition-colors duration-300">department</a>
+            <a href="/faculty.html" class="hover:text-neutral-500 transition-colors duration-300">faculty</a>
+            <a href="/achievement.html" class="hover:text-neutral-500 transition-colors duration-300">achievements</a>
+            <a href="/gallery.html" class="hover:text-neutral-500 transition-colors duration-300">gallery</a>
+        </div>
+        <div class="w-screen px-[10%] flex justify-between items-center gap text-white gap-5 sm:hidden">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" class="flex flex-col justify-center items-start gap-7">
+                    <a href="/index.html">Home</a>
+                    <a href="/dept.html">Department</a>
+                    <a href="/faculty.html">Faculty</a>
+                    <a href="/achievement.html">Achievements</a>
+                    <a href="/gallery.html">Gallery</a>
+                </ul>
+            </div>
+            <div class="w-8"><img class="w-full" src="./assets/images/logo.png" alt="loading"></div>
+        </div>
+        <div class="w-screen px-[10%] flex justify-between items-center gap text-white gap-5">
+            <p>2021</p>
+            <div class="w-full h-[2px] bg-white"></div>
+            <p>2025</p>
+        </div>
+    </nav>
+    <div class="flex-col h-screen w-screen px-[7%]">
         <div class="p-2"></div>
-        <p class="text-center text-xl text-white mt-8 md:text-3xl md:mt-8">Empowering the future of technology: CSE
-            RCOEM"</p>
-        <p class="text-center text-xl text-white mt-8 md:text-3xl md:mt-8">"Where innovation meets excellence: CSE
-            RCOEM"</p>
-        <p class="text-center text-xl text-white mt-8 md:text-3xl md:mt-8"> "Creating tech leaders of tomorrow: CSE
-            RCOEM"</p>
-        <p class="text-center text-xl text-white mt-8 md:text-3xl md:mt-8"> "Leading the way in computer science
-            education: CSE RCOEM"</p>
-        <h1 class="text-center text-4xl text-white mt-8 md:text-8xl md:mt-8">CSE ,RCOEM</h1>
-        <p class="text-center text-xl text-white mt-8 md:text-2xl ">"Join us on a journey to explore the world of
+        <p class="text-center text-4xl text-white mt-8 md:text-5xl md:mt-8" style="font-family: 'Cinzel Decorative';">
+            "WHERE INNOVATION MEETS EXCELLENCE"</p>
+        <h1 class="text-center text-4xl text-white mt-8 md:text-8xl md:mt-8" style="font-family: 'CenturyGothic';">CSE,
+            RCOEM</h1>
+        <p class="text-center text-xl text-white mt-8 md:text-2xl">Join us on a journey to explore the world of
             technology and innovation And Experience the
-            thrill of creating something new “</p>
+            thrill of creating something new</p>
         <div class="text-center flex justify-center mt-8 md:mt-14">
             <button></button>
             <input class=" w-72 bg-white h-10 rounded-2xl text-center md:w-96 md:h-12 "
                 placeholder="Search here"></input>
         </div>
     </div>
-    <style>
-        .Background {
-            background: linear-gradient(-45deg, rgb(21, 1, 21), #6b239e, #b723d5, #d523b7);
-            background-size: 400% 400%;
-            animation: gradient 4s ease infinite;
-            height: 100vh;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-    </style>
 </body>
 
 </html>

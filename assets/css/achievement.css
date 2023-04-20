@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Century Gothic;
+}
+
+.main-page {
+  padding: 6rem;
+  padding-top: 0;
+}
+
+.achievement {
+  padding: 4rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.heading h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #b9b0db;
+}
+
+.heading h4 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.research {
+  margin-bottom: 2rem;
+}
+
+.research,
+.industry {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.research h4,
+.industry h4 {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #b9b0db;
+  padding-bottom: 10px;
+}
+
+.research ul,
+.industry ul {
+  position: relative;
+  left: 1.6rem;
+  font-size: 1.1rem;
+}
+
+.research ul li,
+.industry ul li {
+  margin-top: 10px;
+}
+
+/* Table CSS */
+
+.table2-head {
+  width: 70vw;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.table2-head p {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  padding: 1.2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.table2-head h6,
+.industry-tbl h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.industry-tbl h4 {
+  padding-bottom: 5px;
+}
+
+.table1,
+.table2 {
+  padding-top: 1rem;
+}
+
+.table1,
+.table2,
+.industry-tbl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.industry-tbl {
+  border-bottom: 2px solid #000;
+}
+
+.firsttable,
+.thirdtable {
+  width: 60vw;
+}
+
+.sectable {
+  width: 70vw;
+}
+
+.firsttable,
+.sectable,
+.thirdtable {
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+
+.firsttable tr th,
+.sectable tr th,
+.thirdtable tr th {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.firsttable,
+.sectable,
+.thirdtable,
+th,
+td {
+  border: 2px solid #fff;
+  border-collapse: collapse;
+  padding: 10px;
+  color: #000;
+}
+
+.firsttable tr:nth-child(odd),
+.table2 tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: larger;
+}
+
+td {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: 0.3s;
+  padding: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .main-page {
+    padding: 0;
+  }
+
+  .achievement {
+    padding: 20px;
+  }
+
+  .heading h2 {
+    font-size: 2rem;
+    font-weight: 550;
+  }
+
+  .heading h4 {
+    font-size: 1rem;
+  }
+
+  /*Here we go*/
+
+  .intro {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .research {
+    margin-bottom: 1rem;
+  }
+
+  .research,
+  .industry {
+    padding: 1rem;
+  }
+
+  .research h4,
+  .industry h4 {
+    font-size: 1.5rem;
+    font-weight: 550;
+  }
+
+  .research ul,
+  .industry ul {
+    position: relative;
+    left: 1.6rem;
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .research ul li,
+  .industry ul li {
+    margin-top: 10px;
+  }
+
+  /* Table CSS */
+
+  .table2-head {
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .table2-head p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .table2-head h6,
+  .industry-tbl h4 {
+    font-size: 1.1rem;
+  }
+
+  .firsttable,
+  .thirdtable {
+    width: 90vw;
+  }
+
+  .sectable {
+    width: 90vw;
+  }
+
+  .firsttable,
+  .sectable,
+  .thirdtable {
+    margin-bottom: 3rem;
+    border-radius: 10px;
+  }
+
+  .firsttable tr th,
+  .sectable tr th,
+  .thirdtable tr th {
+    font-size: 0.75rem;
+    font-weight: 200;
+    padding: 5px;
+  }
+
+  .firsttable,
+  .sectable,
+  .thirdtable,
+  th,
+  td {
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    padding: 2px;
+    color: #000;
+  }
+
+  td {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: 0.3s;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  th {
+    color: #fff;
+  }
+}
