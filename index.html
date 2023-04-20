@@ -11,41 +11,8 @@
 </head>
 
 <body>
-    <div class="fixed inset-0 w-screen h-screen bg-gradient-to-r from-neutral-900 to-black z-[-1]">
-        <div id="moving-images" class="relative w-full h-full">
-            <img src="./assets/images/bg-vectors/Vector.svg"
-                class="absolute transition-transform duration-[6s] top-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector2.svg"
-                class="absolute transition-transform duration-[6s] bottom-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector3.svg"
-                class="absolute transition-transform duration-[6s] left-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector4.svg"
-                class="absolute transition-transform duration-[6s] right-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector5.svg"
-                class="absolute transition-transform duration-[6s] inset-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector.svg"
-                class="absolute transition-transform duration-[6s] top-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector2.svg"
-                class="absolute transition-transform duration-[6s] bottom-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector3.svg"
-                class="absolute transition-transform duration-[6s] left-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector4.svg"
-                class="absolute transition-transform duration-[6s] right-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector5.svg"
-                class="absolute transition-transform duration-[6s] inset-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector.svg"
-                class="absolute transition-transform duration-[6s] top-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector2.svg"
-                class="absolute transition-transform duration-[6s] bottom-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector3.svg"
-                class="absolute transition-transform duration-[6s] left-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector4.svg"
-                class="absolute transition-transform duration-[6s] right-0 w-[600px]" />
-            <img src="./assets/images/bg-vectors/Vector5.svg"
-                class="absolute transition-transform duration-[6s] inset-0 w-[600px]" />
-        </div>
-    </div>
-    <div class="flex-col h-screen w-screen">
+
+    <div class="Background flex-col h-screen w-screen ">
         <div class="p-2"></div>
         <p class="text-center text-xl text-white mt-8 md:text-3xl md:mt-8">Empowering the future of technology: CSE
             RCOEM"</p>
@@ -65,8 +32,28 @@
                 placeholder="Search here"></input>
         </div>
     </div>
+    <style>
+        .Background {
+            background: linear-gradient(-45deg, rgb(21, 1, 21), #6b239e, #b723d5, #d523b7);
+            background-size: 400% 400%;
+            animation: gradient 4s ease infinite;
+            height: 100vh;
+        }
 
-    <script src="/assets/js/main.js"></script>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
 </body>
 
 </html>
