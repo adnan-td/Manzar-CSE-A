@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #251430;
+}
+
 .main-page {
   padding: 6rem;
   padding-top: 0;
@@ -245,13 +249,15 @@ td {
     font-size: 1.1rem;
   }
 
-  .firsttable,
+  .firsttable {
+    width: 80vw;
+  }
   .thirdtable {
-    width: 90vw;
+    width: 80vw;
   }
 
   .sectable {
-    width: 90vw;
+    width: 80vw;
   }
 
   .firsttable,
