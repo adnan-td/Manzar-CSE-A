@@ -34,7 +34,6 @@ body {
   transform: translate(-50%, -50%);
   width: 40vw;
   height: 50vh;
-  /*   border-radius: 50%; */
   overflow: hidden;
   transition: all 300ms ease-in-out;
   z-index: -1;
