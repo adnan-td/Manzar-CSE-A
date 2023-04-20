@@ -5,7 +5,7 @@ const slider = document.querySelector(".items");
 		const button = document.querySelectorAll(".button");
 
 		let current = 0;
-		let prev = 4;
+		let prev = 10;
 		let next = 1;
 
 		for (let i = 0; i < button.length; i++) {
@@ -14,7 +14,7 @@ const slider = document.querySelector(".items");
 
 		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+		const gotoNext = () => current < 10 ? gotoNum(current + 1) : gotoNum(0);
 
 		const gotoNum = number => {
 			current = number;
@@ -27,12 +27,12 @@ const slider = document.querySelector(".items");
 				slides[i].classList.remove("next");
 			}
 
-			if (next == 5) {
+			if (next == 11) {
 				next = 0;
 			}
 
 			if (prev == -1) {
-				prev = 4;
+				prev = 10;
 			}
 
 			slides[current].classList.add("active");
