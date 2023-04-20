@@ -298,4 +298,9 @@ td {
   th {
     color: #fff;
   }
+
+  .thirdtable tr th,
+  .thirdtable tr td {
+    font-size: 10px;
+  }
 }
