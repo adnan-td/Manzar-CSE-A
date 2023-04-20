@@ -1,164 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/faculty.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/faculty.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
     <title>Faculty: Manzar - CSE A</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="fixed inset-0 w-screen h-screen bg-black z-[-1]">
-        <video src="./assets/video/persona.mp4" autoplay muted loop
-            class="w-full h-full object-cover absolute inset-0" />
+      <video
+        src="./assets/video/persona.mp4"
+        autoplay
+        muted
+        loop
+        class="w-full h-full object-cover absolute inset-0"
+      />
     </div>
-    <nav class="w-screen flex flex-col justify-center items-center bg-transparent my-10 p-5 gap-6">
-        <div class="hidden justify-center items-center gap-5 text-white decoration-0 bg-transparent sm:flex text-lg">
-            <a href="./index.html" class="hover:text-neutral-500 transition-colors duration-300">home</a>
-            <a href="./dept.html" class="hover:text-neutral-500 transition-colors duration-300">department</a>
-            <a href="./faculty.html" class="text-neutral-500 transition-colors duration-300">faculty</a>
-            <a href="./achievement.html" class="hover:text-neutral-500 transition-colors duration-300">achievements</a>
-            <a href="./gallery.html" class="hover:text-neutral-500 transition-colors duration-300">gallery</a>
+    <nav
+      class="w-screen flex flex-col justify-center items-center bg-transparent my-5 p-5 gap-6"
+    >
+      <div
+        class="hidden justify-center items-center gap-5 text-white decoration-0 bg-transparent sm:flex text-lg"
+      >
+        <a
+          href="./index.html"
+          class="hover:text-neutral-500 transition-colors duration-300"
+          >home</a
+        >
+        <a
+          href="./dept.html"
+          class="hover:text-neutral-500 transition-colors duration-300"
+          >department</a
+        >
+        <a
+          href="./faculty.html"
+          class="text-neutral-500 transition-colors duration-300"
+          >faculty</a
+        >
+        <a
+          href="./achievement.html"
+          class="hover:text-neutral-500 transition-colors duration-300"
+          >achievements</a
+        >
+        <a
+          href="./gallery.html"
+          class="hover:text-neutral-500 transition-colors duration-300"
+          >gallery</a
+        >
+      </div>
+      <div
+        class="w-screen px-[10%] flex justify-between items-center gap text-white gap-5 sm:hidden"
+      >
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu" class="flex flex-col justify-center items-start gap-7">
+            <a href="./index.html">Home</a>
+            <a href="./dept.html">Department</a>
+            <a href="./faculty.html">Faculty</a>
+            <a href="./achievement.html">Achievements</a>
+            <a href="./gallery.html">Gallery</a>
+          </ul>
         </div>
-        <div class="w-screen px-[10%] flex justify-between items-center gap text-white gap-5 sm:hidden">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu" class="flex flex-col justify-center items-start gap-7">
-                    <a href="./index.html">Home</a>
-                    <a href="./dept.html">Department</a>
-                    <a href="./faculty.html">Faculty</a>
-                    <a href="./achievement.html">Achievements</a>
-                    <a href="./gallery.html">Gallery</a>
-                </ul>
-            </div>
-            <div class="w-8"><img class="w-full" src="./assets/images/logo.png" alt="loading"></div>
+        <div class="w-8">
+          <img class="w-full" src="./assets/images/logo.png" alt="loading" />
         </div>
-        <div class="w-screen px-[10%] flex justify-between items-center gap text-white gap-5">
-            <p>2021</p>
-            <div class="w-full h-[2px] bg-white"></div>
-            <p>2025</p>
-        </div>
+      </div>
+      <div
+        class="w-screen px-[10%] flex justify-between items-center gap text-white gap-5"
+      >
+        <p>2021</p>
+        <div class="w-full h-[2px] bg-white"></div>
+        <p>2025</p>
+      </div>
     </nav>
     <div>
-        <div class="container">
-            <article class="card">
-                <div class="content hodcard">
-                    <h1>Prof. Avinash J Agrawal</h1>
-                    <p><strong>Associate Professor & Head of Department, Department of Computer Science &
-                            Engineering</strong></p>
-                    <p>Total Experience in Years - Teaching : 23.8 / Industrial : 0.0 / Research : 0.0 Subject
-                        Specialization : Information Retrieval, NLP, Pattern Recognition Compiling for High Performance
-                        Architecture, Language Processors, Artificial Intelligence, Theoretical Computation, Mobile
-                        Application Design</p>
-                    <span>
-                        <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
-                        <p><strong>e-mail: agrawalaj@rknec.edu</strong></p>
-                    </span>
-                </div>
-                <div class="image">
-                    <img src="http://rknec.edu/Faculty/UserPhotos/agrawalaj/my%20photo1.png" alt="hod">
-                </div>
-            </article>
+      <div class="container">
+        <article class="card">
+          <div class="content hodcard">
+            <h1>Prof. Avinash J Agrawal</h1>
+            <p>
+              <strong
+                >Associate Professor & Head of Department, Department of
+                Computer Science & Engineering</strong
+              >
+            </p>
+            <p>
+              Total Experience in Years - Teaching : 23.8 / Industrial : 0.0 /
+              Research : 0.0 Subject Specialization : Information Retrieval,
+              NLP, Pattern Recognition Compiling for High Performance
+              Architecture, Language Processors, Artificial Intelligence,
+              Theoretical Computation, Mobile Application Design
+            </p>
+            <span>
+              <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
+              <p><strong>e-mail: agrawalaj@rknec.edu</strong></p>
+            </span>
+          </div>
+          <div class="image hod">
+            <img src="/assets/images/faculty/my photo1.png" alt="hod" />
+          </div>
+        </article>
 
-            <article class="card">
-                <div class="content">
-                    <h3>Dr. Manoj B Chandak</h3>
-                    <p><strong>Professor, Department of Computer Science & Engineering</strong></p>
-                    <p>Total Experience in Years - Teaching : 25.1 / Industrial : 0.0 / Research : 0.0 Subject
-                        Specialization : Design and Analysis of Algorithms Language Processing Analysis of Algorithms
-                        Computer Graphics Real Time Operating Systems Operating System Design</p>
-                    <span>
-                        <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
-                        <p><strong>e-mail: chandakmb@rknec.edu
-                            </strong></p>
-                    </span>
-                </div>
-                <div class="image">
-                    <img src="http://rknec.edu/Faculty/UserPhotos/chandakmb/DR.%20M.%20B.%20CHandak%20(5).JPG"
-                        alt="hod">
-                </div>
-            </article>
+        <article class="card">
+          <div class="content">
+            <h3>Dr. Manoj B Chandak</h3>
+            <p>
+              <strong
+                >Professor, Department of Computer Science & Engineering</strong
+              >
+            </p>
+            <p>
+              Total Experience in Years - Teaching : 25.1 / Industrial : 0.0 /
+              Research : 0.0 Subject Specialization : Design and Analysis of
+              Algorithms Language Processing Analysis of Algorithms Computer
+              Graphics Real Time Operating Systems Operating System Design
+            </p>
+            <span>
+              <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
+              <p><strong>e-mail: chandakmb@rknec.edu </strong></p>
+            </span>
+          </div>
+          <div class="image">
+            <img
+              src="/assets/images/faculty/DR. M. B. CHandak (5).jpeg"
+              alt="hod"
+            />
+          </div>
+        </article>
 
-            <article class="card">
-                <div class="content">
-                    <h3>Prof. Hirkani S. Padwad</h3>
-                    <p><strong>Associate Professor , Department of Computer Science & Engineering</strong></p>
-                    <p>Total Experience in Years - Teaching : 12.0 / Industrial : 0.7 / Research : 0.0
-                        Subject Specialization : Data Structures and Algorithms Object Oriented Programming Machine
-                        Learning NLP</p>
-                    <span>
-                        <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
-                        <p><strong>e-mail: padwadhs@rknec.edu
-                            </strong></p>
-                    </span>
-                </div>
-                <div class="image">
-                    <img src="http://rknec.edu/Faculty/UserPhotos/padwadhs/HP.jpg" alt="hod">
-                </div>
-            </article>
+        <article class="card">
+          <div class="content">
+            <h3>Prof. Hirkani S. Padwad</h3>
+            <p>
+              <strong
+                >Associate Professor , Department of Computer Science &
+                Engineering</strong
+              >
+            </p>
+            <p>
+              Total Experience in Years - Teaching : 12.0 / Industrial : 0.7 /
+              Research : 0.0 Subject Specialization : Data Structures and
+              Algorithms Object Oriented Programming Machine Learning NLP
+            </p>
+            <span>
+              <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
+              <p><strong>e-mail: padwadhs@rknec.edu </strong></p>
+            </span>
+          </div>
+          <div class="image dsa">
+            <img src="/assets/images/faculty/DSA.jpg" alt="hod" />
+          </div>
+        </article>
 
-            <article class="card">
-                <div class="content">
-                    <h3>Prof. Kavita B Kalambe</h3>
-                    <p><strong>Associate Professor , Department of Computer Science & Engineering</strong></p>
-                    <p>Total Experience in Years - Teaching : 6.0 / Industrial : 0.0 / Research : 0.0
-                        Subject Specialization : Programming for Problem Solving, object oriented programming, Digital
-                        Electronics and Microprocessor, Data Structure and Algorithm, machine learning, Deep learning
-                    </p>
-                    <span>
-                        <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
-                        <p><strong>e-mail: kalambekb@rknec.edu</strong></p>
-                    </span>
-                </div>
-                <div class="image">
-                    <img src="http://rknec.edu/Faculty/UserPhotos/kalambekb/1642219875153.jpg" alt="hod">
-                </div>
-            </article>
+        <article class="card">
+          <div class="content">
+            <h3>Prof. Kavita B Kalambe</h3>
+            <p>
+              <strong
+                >Associate Professor , Department of Computer Science &
+                Engineering</strong
+              >
+            </p>
+            <p>
+              Total Experience in Years - Teaching : 6.0 / Industrial : 0.0 /
+              Research : 0.0 Subject Specialization : Programming for Problem
+              Solving, object oriented programming, Digital Electronics and
+              Microprocessor, Data Structure and Algorithm, machine learning,
+              Deep learning
+            </p>
+            <span>
+              <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
+              <p><strong>e-mail: kalambekb@rknec.edu</strong></p>
+            </span>
+          </div>
+          <div class="image">
+            <img src="/assets/images/faculty/cp.jpg" alt="hod" />
+          </div>
+        </article>
 
-            <article class="card">
-                <div class="content">
-                    <h3>Dr. Vasundhara Rathod</h3>
-                    <p><strong>Associate Professor , Department of Computer Science & Engineering</strong></p>
-                    <p>Total Experience in Years - Teaching : 7.0 / Industrial : 1.0 / Research : 0.0
-                        Subject Specialization : Object Oriented Technologies, Design Patterns, Computer Networks, Web
-                        Application Development, Bio-medical Signal Processing</p>
-                    <span>
-                        <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
-                        <p><strong>e-mail: rathodv1@rknec.edu</strong></p>
-                    </span>
-                </div>
-                <div class="image">
-                    <img src="http://rknec.edu/Faculty/UserPhotos/rathodv1/V%20rathod%20(1).jpg" alt="hod">
-                </div>
-            </article>
+        <article class="card">
+          <div class="content">
+            <h3>Dr. Vasundhara Rathod</h3>
+            <p>
+              <strong
+                >Associate Professor , Department of Computer Science &
+                Engineering</strong
+              >
+            </p>
+            <p>
+              Total Experience in Years - Teaching : 7.0 / Industrial : 1.0 /
+              Research : 0.0 Subject Specialization : Object Oriented
+              Technologies, Design Patterns, Computer Networks, Web Application
+              Development, Bio-medical Signal Processing
+            </p>
+            <span>
+              <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
+              <p><strong>e-mail: rathodv1@rknec.edu</strong></p>
+            </span>
+          </div>
+          <div class="image">
+            <img src="/assets/images/faculty/gfg.jpg" alt="hod" />
+          </div>
+        </article>
 
-            <article class="card">
-                <div class="content">
-                    <h3>Dr. Sunita G Rawat</h3>
-                    <p><strong>Associate Professor , Department of Computer Science & Engineering</strong></p>
-                    <p>Total Experience in Years - Teaching : 10.0 / Industrial : 3.2 / Research : 0.0
-                        Subject Specialization : Data Structure, Formal Language and Automata Theory, Operating System,
-                        Data Structure and Algorithm, Object Oriented Programming, Programming for Problem Solving
-                    </p>
-                    <span>
-                        <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
-                        <p><strong>e-mail: rawatsg@rknec.edu</strong></p>
-                    </span>
-                </div>
-                <div class="image">
-                    <img src="http://rknec.edu/Faculty/UserPhotos/rawatsg/S%20Rawat%20(1).jpg" alt="hod">
-                </div>
-            </article>
-        </div>
+        <article class="card">
+          <div class="content">
+            <h3>Dr. Sunita G Rawat</h3>
+            <p>
+              <strong
+                >Associate Professor , Department of Computer Science &
+                Engineering</strong
+              >
+            </p>
+            <p>
+              Total Experience in Years - Teaching : 10.0 / Industrial : 3.2 /
+              Research : 0.0 Subject Specialization : Data Structure, Formal
+              Language and Automata Theory, Operating System, Data Structure and
+              Algorithm, Object Oriented Programming, Programming for Problem
+              Solving
+            </p>
+            <span>
+              <p><strong>Qualification : M.Tech and Ph.D.</strong></p>
+              <p><strong>e-mail: rawatsg@rknec.edu</strong></p>
+            </span>
+          </div>
+          <div class="image">
+            <img src="/assets/images/faculty/fdlca.jpg" alt="hod" />
+          </div>
+        </article>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
