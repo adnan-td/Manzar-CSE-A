@@ -59,7 +59,12 @@ img {
 }
 
 .hod {
-  width: 28rem;
+  width: 32rem;
+}
+
+.content h3 {
+  color: #b9b0db;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1150px) {
